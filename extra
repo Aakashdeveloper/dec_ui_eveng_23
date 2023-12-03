@@ -6,3 +6,35 @@ HTML > Structure
 CSS > Look and Feel
 Bootstrap > Responsive Design
 Javascript > Functionality 
+
+HTML > is a rapper tag
+HEAD 
+    > all the linking css,javascript is done here
+    > Only title is a tag that is visible to users
+BODY
+    > All the content that is visible to the user
+
+
+
+//Add extension to VS code
+> live server
+
+
+block level
+> Always take the whole width of screen
+> Always start from new line
+> p, div ,section,header
+
+inline 
+> Start in the same line
+> Only occupies space which is required
+> span, img ,a 
+
+
+Name
+image
+something you
+skills
+hobbies
+map > later
+socail links
