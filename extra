@@ -6,6 +6,8 @@ HTML > Structure
 CSS > Look and Feel
 Bootstrap > Responsive Design
 Javascript > Functionality 
+NodeJs
+React
 
 HTML > is a rapper tag
 HEAD 
@@ -36,5 +38,51 @@ image
 something you
 skills
 hobbies
-map > later
+map
 socail links
+
+///////
+
+inline > styletag > stylesheet
+
+inline
+{
+    color:red,
+    height:150px
+}
+
+styletag
+{
+    color:orange,
+    width:80px
+    background:green
+}
+
+stylesheet
+{
+   background:white;
+   font-size:20px;
+   height:90px 
+}
+
+
+{
+    color:red,
+    height:150px;
+    width:80px;
+    background:green;
+    font-size:20px;
+}
+
+
+TagName
+> Any Tag we can target but we should avoid that
+
+className
+> Commons properties which are going to applied for multiple elements
+> .
+
+Id
+> Unique property for particuler tag
+> #
+

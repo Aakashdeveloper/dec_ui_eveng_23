@@ -1,0 +1,25 @@
+h1{
+    text-align:center;
+    color:purple
+}
+.card{
+    width:20%;
+    background:#4AB3E4;
+    height:400px;
+    float: left;
+    margin-left:3%;
+}
+.brown{
+    background:#d08d4f;
+}
+#blue{
+    background:#5495ca; 
+}
+.lightbrown{
+    background:#b99c8c;
+}
+
+.card > img{
+    height:200px;
+    width:100%
+}
