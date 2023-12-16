@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Developer Funnel</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Bootstrap</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                </p>
+                <a href="#">Text</a>
+                <button class="btn btn-danger">Click</button>
+                <button class="btn btn-success">Click</button>
+                <button class="btn btn-warning">Click</button>
+                <button class="btn btn-primary">Click</button>
+                <button class="btn btn-info" data-toggle="modal"
+                data-target="#devModal">Click</button>
+                <button class="btn btn-primary btn-mycolor">Click</button>
+            </div>
+
+            <div id="devModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Model Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some Text In the Modal</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger"
+                            data-dismiss="modal">Close</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <hr/>
+            <span class="glyphicon glyphicon-cloud"></span>
+            <span class="glyphicon glyphicon-trash trash"></span>
+            <span class="glyphicon glyphicon-edit edit"></span>
+            <hr/>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Students
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>RollNo</th>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success">
+                                <td>1</td>
+                                <td>Rohit</td>
+                                <td>Ui</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Amit</td>
+                                <td>React</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nikita</td>
+                                <td>Node</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+            
+        </div>
+       
+    </body>
+</html>
+
+
+<!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Developer Funnel</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav> -->
