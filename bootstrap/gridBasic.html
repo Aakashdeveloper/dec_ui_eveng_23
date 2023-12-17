@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    User Forms
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="fname">FirstName:</label>
+                        <input id="fname" class="form-control" name="fname"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lname">LastName:</label>
+                        <input id="lname"  class="form-control" name="lname"/>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email:</label>
+                            <input id="email" class="form-control" name="email"/>
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="pwd">Password:</label>
+                            <input id="pwd"  class="form-control" name="pwd"/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="country">Country:</label>
+                            <input id="country" class="form-control" name="country"/>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                            <label for="state">State:</label>
+                            <input id="state"  class="form-control" name="state"/>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="city">City:</label>
+                            <input id="city"  class="form-control" name="city"/>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-danger">Reset</button>
+                    
+                </div>
+            </div>  
+
+            
+            <div id="devCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#devCarousel" data-slide-to="1"></li>
+                    <li data-target="#devCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="food-wallpaper.png" alt="fw" class="sliderImage"/>
+                    </div>
+                    <div class="item">
+                        <img src="nightlife.png" alt="fw" class="sliderImage"/>
+                    </div>
+                    <div class="item">
+                        <img src="snacks.png" alt="fw" class="sliderImage"/>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
+
+            <hr/>
+            <div class="row">
+                <div id="first" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="second" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="third" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="fourth" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="fifth" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="sixth" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div id="seventh" class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+            </div>
+        </div>
+    </body>
+</html>

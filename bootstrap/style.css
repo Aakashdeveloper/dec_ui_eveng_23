@@ -11,3 +11,37 @@
     font-size:20px;
     color:green 
 }
+
+#first{
+    height:200px;
+    background-color:gray
+}
+#second{
+    height:200px;
+    background-color:rgb(234, 240, 159)
+}
+#third{
+    height:200px;
+    background-color:rgb(205, 237, 186)
+}
+#fourth{
+    height:200px;
+    background-color:rgb(232, 173, 173)
+}
+#fifth{
+    height:200px;
+    background-color:rgb(164, 168, 221)
+}
+#sixth{
+    height:200px;
+    background-color:rgb(162, 181, 219)
+}
+#seventh{
+    height:200px;
+    background-color:rgb(189, 116, 178)
+}
+
+.sliderImage{
+    height: 300px !important;
+    width:100%
+}
