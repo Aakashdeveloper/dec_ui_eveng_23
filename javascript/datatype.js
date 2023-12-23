@@ -102,3 +102,54 @@ NaN
 3029
 "10"+20+30-1
 102029
+
+
+"Hi"-1
+NaN
+"10"-1
+9
+"10"+1
+'101'
+20*"2"
+40
+"18"/"3"
+6
+"10a"-1
+NaN
+
+//es5
+var a = "10"
+var b = "1"
+undefined
+a+b
+'101'
+parseInt(a)+parseInt(b)
+11
+var a = "10.2"
+var b = "1.33"
+undefined
+parseInt(a)+parseInt(b)
+11
+parseFloat(a)
+10.2
+parseFloat(a)+parseFloat(b)
+11.53
+
+//es6
+
+Number(a)+Number(b)
+11.53
+
+//////
+
+true +true
+2
+true+false
+1
+10/false
+Infinity
+2*true
+2
+
+true is equal to 1
+false is equal to 0
