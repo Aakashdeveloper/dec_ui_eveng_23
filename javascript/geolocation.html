@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Geo With Weather</title>
+    </head>
+    <body>
+        <button onclick="geolocation()">Get Location</button>
+        <p id="out"></p>
+        <p id="weather"></p>
+
+        <script>
+            let x = document.getElementById('out');
+            let y = document.getElementById('weather');
+            function geolocation() {
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText = "Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                let lat = data.coords.latitude;
+                let long = data.coords.longitude
+                x.innerText=`Latitude is ${lat} and Longitude is ${long}`;
+            }
+        </script>
+    </body>
+</html>
