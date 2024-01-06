@@ -131,3 +131,38 @@ formvalidation
 
 
 https://forms.gle/nYrSSQxQdV1gkg6x7
+
+
+C > Create (Post)
+R > Read   (Get)
+U > Update (Put)
+D > Delete (Delete)
+
+npm > node package manager
+
+open source
+
+dependency mangement
+>  package.json
+* First file of the application 
+* Meta Data (description about application)
+* Version
+* Packages
+* Commands (start,test)
+
+// step to generate package.json
+* NodeJs must be installed in laptop
+* open terminal go inside folder
+* npm init -y
+
+// step to install package
+* open terminal go inside folder
+* npm i packagename
+
+// install package global
+> open cmd as adminstrator
+> npm i -g nodemon
+
+
+signUp
+> https://www.mongodb.com/cloud/atlas/register
