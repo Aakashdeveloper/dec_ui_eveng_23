@@ -166,3 +166,69 @@ dependency mangement
 
 signUp
 > https://www.mongodb.com/cloud/atlas/register
+
+
+Single Threaded, async , non blocking i/o
+
+https://chromewebstore.google.com/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?pli=1
+
+
+MySql
+RollNo | Hindi | English
+  1    |  80   |
+  2    |       | 90
+  3    |  92   |
+
+
+mongodb
+[
+    {
+        rollNo:1,
+        Hindi:80
+    },
+    {
+        rollNo:2,
+        English:90
+    },
+    {
+        rollNo:3,
+        Hindi:92
+    }
+]
+
+SQL        MongoDb
+Database   Database
+tables     Collections
+row        Document
+Insert     insert
+select     find
+
+
+db.products.find()
+
+db.products.find({category_id:1,Size: "Small"})
+
+npm i mongodb@6.2.0
+
+default port > 27017
+
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority
+
+params
+> pass after /
+> need to define and complusory to pass
+> req.params.id
+
+queryParmas
+> pass after ?
+> no need to define
+> req.query.id
+
+//step to generate react app
+> open cmd as admin
+> npm i -g create-react-app
+
+//
+> open terminal
+> go inside the folder
+> create-react-app appname
