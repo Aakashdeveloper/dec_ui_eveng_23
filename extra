@@ -232,3 +232,24 @@ queryParmas
 > open terminal
 > go inside the folder
 > create-react-app appname
+
+
+single page application with component based structure
+
+
+
+function add(a,b){
+    return a,b
+}
+
+state
+> Every component can have its own state
+> We can update the value of state
+> Any data interaction will happen through state
+> Whenever state update component will rerender
+
+props
+> is use to transfer data between the nested component
+> we cannot update the value of props
+
+virtual dom
