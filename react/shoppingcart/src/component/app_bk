@@ -1,7 +1,10 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ProductDisplay from './productDisplay';
+import CategoryDisplay from 
+
+let url = process.env.REACT_APP_BASE_URL;
 
 const App = () => {
 
@@ -75,6 +78,17 @@ const App = () => {
             "Brand": "Wrangler"
         }
     ])
+    const [category,setCategory] = useState([])
+
+
+    useEffect(()=>{
+        fetch(`${url}/category`,{method:'GET'})
+        .then((res) =>  res.json())
+        .then((data) => {
+            console.log(data)
+            setCategory(data)
+        })
+    },[])
 
 
     const updateCount = () => {
