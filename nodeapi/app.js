@@ -3,14 +3,17 @@ let app = express();
 let port = 9110;
 let cors = require('cors');
 let {MongoClient} = require('mongodb');
-let mongoUrl = "mongodb+srv://@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority"
+let mongoUrl = "mongodb://127.0.0.1:27017"
 let client = new MongoClient(mongoUrl);
+
+app.use(express.urlencoded({extended:false}))
+app.use(express.json())
 
 async function dbConnect(){
     await client.connect()
 }
 
-let db = client.db('janUi');
+let db = client.db('sepnode');
 
 app.use(cors())
 // req > what we send to server
@@ -58,6 +61,13 @@ app.get('/product/:id',async (req,res) => {
     cursor.closed
     res.send(output)
 });
+
+app.post('/addProducts',async(req,res) => {
+    console.log(req.body)
+    await db.collection('products').insertOne(req.body);
+    res.send('data added')
+})
+
 
 app.listen(port,(err) => {
     if(err) throw err;

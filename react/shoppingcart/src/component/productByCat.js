@@ -1,35 +1,25 @@
 import React,{useState,useEffect} from 'react';
+import {useParams} from 'react-router-dom';
 import axios from 'axios';
-import {useParams,useSearchParams} from 'react-router-dom';
-import {Link} from 'react-router-dom';
+
 
 let url = process.env.REACT_APP_BASE_URL;
 
-const ProductDisplay = (props) => {
-   // let params = useParams();
-    let [searchParams] = useSearchParams()
+const ProductByCat = () => {
+    let params = useParams();
+    console.log(params.catId)
+
     const [products,setProducts] = useState([]);
-   
 
     useEffect(() => {
-        let nurl = ""
-        let catId = searchParams.getAll('catId')
-        console.log(">>>",catId)
-      
-        if(catId.length !== 0){
-            nurl = `${url}/product/${catId}`
-        }else{
-            nurl = `${url}/products/`
-        }
-        console.log(nurl)
-        axios.get(nurl)
+        axios.get(`${url}/product/${params.catId}`)
         .then((res) => {setProducts(res.data)})
     },[])
 
 
     const renderProducts = products.map((item) => {
         return(
-            <div className="row">    
+            <div className="row" key={item.id}>    
             <br/>
             <div className="col-md-2 col-sm-3 text-center">
                 <img alt="" src={item.Image}
@@ -87,4 +77,4 @@ const ProductDisplay = (props) => {
     )
 }
 
-export default ProductDisplay
+export default ProductByCat;

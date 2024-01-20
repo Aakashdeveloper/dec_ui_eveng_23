@@ -31,7 +31,7 @@ const Category = () => {
                 <div className="row">
                     <div className="col-xs-9">
                         <h4>
-                            <Link to="/">Details</Link>
+                            <Link to={`/products?catId=${item.id}`}>Details</Link>
                         </h4>
                     </div>
                     <div className="col-xs-3"></div>
