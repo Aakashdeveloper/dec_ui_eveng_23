@@ -31,6 +31,15 @@ const ProductDisplay = (props) => {
         return(
             <div className="row">    
             <br/>
+            <hr/>
+            <div/>
+        
+        <div></div>
+        <div>{false}</div>
+        <div>{null}</div>
+        <div>{undefined}</div>
+        <div>{true}</div>
+            <hr/>
             <div className="col-md-2 col-sm-3 text-center">
                 <img alt="" src={item.Image}
                 style={{width:'100px',height:'100px'}} 
