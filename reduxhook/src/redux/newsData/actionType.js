@@ -1,0 +1,1 @@
+export const LATEST_NEWS = 'LATEST_NEWS';
