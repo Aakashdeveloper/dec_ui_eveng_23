@@ -264,3 +264,12 @@ install global package
 > open new cmd
 > go inside folder
 > json-server --watch db.json --port 9100
+
+////setup React native
+install global package
+> open cmd as admin
+> npm i -g create-react-native-app
+
+> create-react-native-app appname
+
+
