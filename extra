@@ -273,3 +273,4 @@ install global package
 > create-react-native-app appname
 
 
+pip install flask
