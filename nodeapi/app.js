@@ -3,7 +3,7 @@ let app = express();
 let port = 9110;
 let cors = require('cors');
 let {MongoClient} = require('mongodb');
-let mongoUrl = "mongodb+srv://test1:egaexMfvE731euWy@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority" 
+let mongoUrl = ""
 let client = new MongoClient(mongoUrl);
 
 app.use(express.urlencoded({extended:false}))
