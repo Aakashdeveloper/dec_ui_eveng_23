@@ -3,7 +3,7 @@ let app = express();
 let port = 9110;
 let cors = require('cors');
 let {MongoClient} = require('mongodb');
-let mongoUrl = "mongodb://127.0.0.1:27017"
+let mongoUrl = "mongodb+srv://test1:egaexMfvE731euWy@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority" 
 let client = new MongoClient(mongoUrl);
 
 app.use(express.urlencoded({extended:false}))
@@ -13,7 +13,7 @@ async function dbConnect(){
     await client.connect()
 }
 
-let db = client.db('sepnode');
+let db = client.db('Aprnode');
 
 app.use(cors())
 // req > what we send to server
@@ -26,7 +26,7 @@ app.get('/',(req,res) => {
 
 app.get('/category',async (req,res) => {
     let output = [];
-    const cursor = db.collection('category').find();
+    const cursor = db.collection('catgeory').find();
     for await (const data of cursor){
         output.push(data)
     }
