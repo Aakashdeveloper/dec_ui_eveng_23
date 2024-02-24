@@ -74,3 +74,4 @@ app.listen(port,(err) => {
     dbConnect()
     console.log(`Server is running on port ${port}`)
 })
+
